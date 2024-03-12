@@ -36,7 +36,7 @@ defmodule PhoenixTypedForm.MixProject do
     [
       name: "phoenix_typed_form",
       files: ~w(lib .formatter.exs mix.exs README*),
-      licenses: ["BSD"],
+      licenses: ["BSD-2-Clause"],
       links: %{"GitHub" => "https://github.com/surrsurus/phoenix_typed_form"}
     ]
   end
