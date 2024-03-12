@@ -22,7 +22,7 @@ defmodule PhoenixTypedForm.MixProject do
   defp deps do
     [
       {:phoenix_ecto, "~> 4.5"},
-      {:phoenix_live_view, "~> 0.18.3"},
+      {:phoenix_live_view, "~> 0.20.13"},
       {:phoenix, "~> 1.7.11"},
       {:typed_ecto_schema, "~> 0.4.1"}
     ]
