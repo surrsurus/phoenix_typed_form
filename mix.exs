@@ -7,7 +7,11 @@ defmodule PhoenixTypedForm.MixProject do
       version: "0.1.0",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package(),
+      namme: "Phoenix Typed Form",
+      source_url: "https://github.com/surrsurus/phoenix_typed_form",
+      description: "A macro that enforces a typed schema for your Phoenix LiveView forms"
     ]
   end
 
@@ -25,6 +29,14 @@ defmodule PhoenixTypedForm.MixProject do
       {:phoenix_live_view, "~> 0.20.13"},
       {:phoenix, "~> 1.7.11"},
       {:typed_ecto_schema, "~> 0.4.1"}
+    ]
+  end
+
+  defp package() do
+    [
+      name: "phoenix_typed_form",
+      files: ~w(lib .formatter.exs mix.exs README*),
+      links: %{"GitHub" => "https://github.com/surrsurus/phoenix_typed_form"}
     ]
   end
 end
