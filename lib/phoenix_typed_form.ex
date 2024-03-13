@@ -139,7 +139,7 @@ defmodule PhoenixTypedForm do
       """
       @spec update_form(map(), Keyword.t()) :: Phoenix.HTML.Form.t()
       def update_form(attrs, constraints \\ []) do
-        case new(attrs, constraints) do
+        case apply_changeset(attrs, constraints) do
           {:ok, val} -> changeset(val, %{}, constraints) |> to_form()
           {:error, cs} -> to_form(cs)
         end
@@ -170,7 +170,7 @@ defmodule PhoenixTypedForm do
         end
       end
 
-      defp new(attrs, constraints \\ []) do
+      defp apply_changeset(attrs, constraints \\ []) do
         %__MODULE__{}
         |> changeset(attrs, constraints)
         |> apply_action(:new)
