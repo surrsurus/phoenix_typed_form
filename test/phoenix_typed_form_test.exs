@@ -16,6 +16,20 @@ defmodule PhoenixTypedFormTest do
     def_typed_form()
   end
 
+  defmodule TestFormDefaults do
+    @moduledoc """
+    A form with default starting values
+    """
+    use PhoenixTypedForm
+
+    typed_embedded_schema do
+      field(:name, :string)
+      field(:age, :integer)
+    end
+
+    def_typed_form(default_form: %{name: "John", age: 30})
+  end
+
   defmodule TestFormConstraints do
     @moduledoc """
     A form with extra validations in the changeset/3 function only
@@ -118,6 +132,13 @@ defmodule PhoenixTypedFormTest do
       form = TestFormBasic.update_form(%{name: 123, age: "thirty"})
       assert TestFormBasic.get_error(form, :name) == ["is invalid"]
       assert TestFormBasic.get_error(form, :age) == ["is invalid"]
+    end
+  end
+
+  describe "PhoenixTypedForm - Default Forms" do
+    test "new_form/0 creates an empty form with given defaults" do
+      form = TestFormDefaults.new_form()
+      assert form.data == %TestFormDefaults{name: "John", age: 30}
     end
   end
 end
