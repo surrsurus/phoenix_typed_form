@@ -27,7 +27,7 @@ defmodule PhoenixTypedFormTest do
       field(:age, :integer)
     end
 
-    def_typed_form(default_form: %{name: "John", age: 30})
+    def_typed_form(default_values: %{name: "John", age: 30})
   end
 
   defmodule TestFormConstraints do

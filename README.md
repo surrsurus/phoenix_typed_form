@@ -13,7 +13,7 @@ A typed form will have the following properties:
 - Is validate-able - All fields are required to be filled out before a form is considered valid
 
 The macro suports:
-- Default values across all forms - Allows you to specify default form options via @default_form in the form of attrs.
+- Default values across all forms - Allows you to specify default form options via @default_values in the form of attrs.
 - Default values on new form creation - Allows you to override or specify a different default when creating a form - useful
   for when your form requires something you don't have at compile time, like pulling in the policy quantity for a claim.
 - Custom changesets & Runtime changeset contraints - Allows you to specify constraints on the form at runtime,
