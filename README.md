@@ -46,7 +46,7 @@ defmodule BasicForm do
     <.form for={@form} phx-change="update-form">
       <p>Enter qty</p>
       <.input
-        field={{@form, :qty}}
+        field={@form[:qty]}
         type="number"
         step="1.0"
         label="Qty"
