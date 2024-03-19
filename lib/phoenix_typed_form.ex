@@ -90,7 +90,7 @@ defmodule PhoenixTypedForm do
       use TypedEctoSchema
       use Phoenix.Component
       import Ecto.Changeset
-      import unquote(__MODULE__)
+      import PhoenixTypedForm
 
       @primary_key false
     end
