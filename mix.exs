@@ -9,7 +9,7 @@ defmodule PhoenixTypedForm.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
-      namme: "Phoenix Typed Form",
+      name: "Phoenix Typed Form",
       source_url: "https://github.com/surrsurus/phoenix_typed_form",
       description: "A macro that enforces a typed schema for your Phoenix LiveView forms"
     ]
