@@ -1,6 +1,4 @@
-# PhoenixTypedForm
-
-[![Hex.pm](https://img.shields.io/hexpm/v/phoenix_typed_form.svg)](https://hex.pm/packages/phoenix_typed_form)
+# PhoenixTypedForm [![CI](https://github.com/surrsurus/phoenix_typed_form/actions/workflows/ci.yml/badge.svg)](https://github.com/surrsurus/phoenix_typed_form/actions/workflows/ci.yml) [![Hex.pm](https://img.shields.io/hexpm/v/phoenix_typed_form.svg)](https://hex.pm/packages/phoenix_typed_form)
 
 A macro that enforces a typed schema for your Phoenix LiveView forms.
 The idea is that you define your schema and an optional changeset, then let the macro do the heavy lifting from there.
