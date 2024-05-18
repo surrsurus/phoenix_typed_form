@@ -87,20 +87,18 @@ To add a form in your heex template, it's really simple. Just invoke the render_
 <%= BasicForm.render_form form={@form} %>
 ```
 
+## Documentation
+
+Read the docs on HexDocs: https://hexdocs.pm/phoenix_typed_form/PhoenixTypedForm.html
+
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `phoenix_typed_form` to your list of dependencies in `mix.exs`:
+Add `phoenix_typed_form` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:phoenix_typed_form, "~> 0.1.0"}
+    {:phoenix_typed_form, "~> 0.1.1"}
   ]
 end
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/phoenix_typed_form>.
-
