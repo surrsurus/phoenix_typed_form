@@ -27,7 +27,7 @@ defmodule PhoenixTypedForm.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:phoenix_ecto, "~> 4.5"},
-      {:phoenix_live_view, "~> 0.20.13"},
+      {:phoenix_live_view, "~> 1.0.1"},
       {:phoenix, "~> 1.7.11"},
       {:typed_ecto_schema, "~> 0.4.1"}
     ]
